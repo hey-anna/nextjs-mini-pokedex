@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# nextjs-mini-pokedex
 
-## Getting Started
+Next.js 기반으로 제작된 포켓몬 도감(Pokédex) 프로젝트입니다.  
+Tailwind CSS, Zustand, TanStack Query를 사용하여 기능 중심의 구조로 구성되며, PokéAPI를 활용해 데이터를 가져옵니다.
 
-First, run the development server:
+---
+
+## 📆 Version Info
+
+- First created on: **2025.06**
+- 개인 학습용으로 제작한 사이드 프로젝트입니다.
+- App Router 기반의 최신 Next.js 구조를 사용합니다.
+
+---
+
+## 📌 기술 스택
+
+### ⚙️ 개발 환경
+
+- **프레임워크**: Next.js (App Router)
+- **스타일링**: Tailwind CSS
+- **패키지 매니저**: Yarn
+- **프로그래밍 언어**: TypeScript
+
+### 🛠️ 개발 도구 및 설정
+
+#### 📦 주요 라이브러리
+
+| 라이브러리              | 설명                                                                                    |
+| ----------------------- | --------------------------------------------------------------------------------------- |
+| `zustand`               | 전역 상태 관리를 위한 경량 라이브러리. 포켓몬 검색어, 즐겨찾기 등 상태를 관리할 때 사용 |
+| `@tanstack/react-query` | 서버 상태를 캐싱하고 관리하는 라이브러리. 포켓몬 리스트 및 상세 정보를 효율적으로 관리  |
+| `axios`                 | API 요청을 위한 HTTP 클라이언트                                                         |
+| `tailwindcss`           | 유틸리티 기반의 CSS 프레임워크. 빠른 UI 개발에 적합                                     |
+| `next`                  | React 기반의 서버 사이드 렌더링 프레임워크                                              |
+| `react` / `react-dom`   | 리액트 핵심 라이브러리                                                                  |
+
+---
+
+## 📜 설치 및 실행 명령어
 
 ```bash
-npm run dev
-# or
+# 프로젝트 생성
+npx create-next-app@latest nextjs-mini-pokedex --typescript
+
+# 개발 서버 실행
+cd nextjs-mini-pokedex
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

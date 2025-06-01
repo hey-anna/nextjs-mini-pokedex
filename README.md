@@ -47,3 +47,10 @@ npx create-next-app@latest nextjs-mini-pokedex --typescript
 cd nextjs-mini-pokedex
 yarn dev
 ```
+
+## 📦 추가 설치 명령어
+
+```bash
+# 전역 상태 및 API 요청 관련 라이브러리
+yarn add @tanstack/react-query zustand axios
+```

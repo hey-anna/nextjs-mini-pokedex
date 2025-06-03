@@ -1,7 +1,7 @@
 # nextjs-mini-pokedex
 
 Next.js 기반으로 제작된 포켓몬 도감(Pokédex) 프로젝트입니다.  
-Tailwind CSS, Zustand, TanStack Query를 사용하여 기능 중심의 구조로 구성되며, PokéAPI를 활용해 데이터를 가져옵니다.
+Tailwind CSS, Zustand, TanStack Query를 사용하여 기능 중심의 구조로 구성되며, PokéAPI를 통해 데이터를 불러옵니다.
 
 ---
 
@@ -53,4 +53,7 @@ yarn dev
 ```bash
 # 전역 상태 및 API 요청 관련 라이브러리
 yarn add @tanstack/react-query zustand axios
+
+# Netlify용 Next.js 플러그인 설치 (개발 의존성)
+yarn add -D @netlify/plugin-nextjs
 ```
